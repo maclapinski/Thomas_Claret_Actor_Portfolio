@@ -10,13 +10,14 @@ body {
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
 h1,
 h2,
 h3 {
+  font-family: 'Crimson Text', serif;
   font-weight: 400;
 }
 
@@ -26,7 +27,7 @@ a {
 }
 
 .text-secondary {
-  color: $secondary-color;
+  color: $text-color;
 }
 
 header {
@@ -62,7 +63,6 @@ main {
   img {
     vertical-align: middle;
   }
-
 }
 
 footer {
