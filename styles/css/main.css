@@ -13,8 +13,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("/img/Thomas 2.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/img/Thomas 2.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("/img/Thomas 2.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("/img/Thomas 2.jpg") center top;
   background-size: cover;
 }
 
@@ -22,11 +22,10 @@
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #fff;
 }
 
 .home__name--last {
-  color: #ff652f;
+  color: #1a1025;
   font-weight: 700;
 }
 
@@ -48,29 +47,29 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #1f1e1e;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #1f1e1e;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #fff;
+  background: #1f1e1e;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -121,7 +120,7 @@
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #272727;
+  background: #ffffff;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
@@ -148,21 +147,21 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #ff652f;
+  color: #1a1025;
 }
 
 .nav .menu-nav__link {
   display: inline-block;
-  font-size: 2rem;
+  font-size: .5em;
   text-transform: uppercase;
   padding: 2rem 0;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .nav .menu-nav__link:hover {
-  color: #ff652f;
+  color: green;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -193,8 +192,8 @@
 .about__bio-image {
   height: 50vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("/img/Thomas 2.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/img/Thomas 2.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("/img/Thomas 2.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("/img/Thomas 2.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,9 +234,9 @@
 }
 
 .about .jobs__job {
-  background: #414141;
+  background: white;
   padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #1a1025;
 }
 
 .about .jobs__job h2, .about .jobs__job h3 {
@@ -286,7 +285,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: 3rem auto;
 }
 
@@ -312,6 +311,7 @@
 }
 
 .projects .project-container .video-container .responsive-iframe {
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -402,8 +402,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("/img/Thomas 3.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/img/Thomas 3.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("/img/Thomas 3.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("/img/Thomas 3.jpg") center top;
   background-size: cover;
 }
 
@@ -508,26 +508,27 @@
 }
 
 body {
-  background: #272727;
-  color: #fff;
+  background: #ffffff;
+  color: #1f1e1e;
   height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
 h1,
 h2,
 h3 {
+  font-family: 'Crimson Text', serif;
   font-weight: 400;
 }
 
 a {
-  color: #fff;
+  color: #1f1e1e;
   text-decoration: none;
 }
 
 .text-secondary {
-  color: #ff652f;
+  color: #1e1e1e;
 }
 
 header {
@@ -555,7 +556,7 @@ main .social-icons a {
 }
 
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #1a1025;
 }
 
 main .mySlides1,
@@ -574,6 +575,6 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: #fff;
+  color: #1f1e1e;
 }
 /*# sourceMappingURL=main.css.map */
