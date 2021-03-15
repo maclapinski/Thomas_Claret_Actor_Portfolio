@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/css/main.css" />
+    <title>Thomas Claret Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item active">
+            <a href="#" class="menu-nav__link"> Home </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#about" class="menu-nav__link"> About Me </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#projects" class="menu-nav__link"> My Work </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#contact" class="menu-nav__link"> Contact Me </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home">
+        <h2>Hi! My Name Is</h2>
+        <h1 class="home__name">
+          Thomas <span class="home__name--last">Claret</span>
+        </h1>
+        <h2>Actor & Board Game Designer</h2>
+
+        <div class="social-icons">
+          <a href="#!">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+
+        <footer>&copy; Copyright 2019</footer>
+      </section>
+      <section class="projects" id="projects">
+        <!-- ***************** slideshow -->
+        <h1 class="text-secondary">My Work</h1>
+        <div class="project-container">
+          <div class="slideshow-container">
+            <div class="mySlides1">
+              <img src="/img/095C2090.JPG" style="width: 100%" />
+            </div>
+
+            <div class="mySlides1">
+              <img src="/img/095C2107.JPG" style="width: 100%" />
+            </div>
+
+            <div class="mySlides1">
+              <img src="/img/095C2296.JPG" style="width: 100%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          </div>
+          <div class="project-text-container">
+            <h1>Hamlet</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              rerum iure possimus enim nulla ut reiciendis quo quibusdam
+              voluptatem illum dolore minus aut laborum placeat, rem, quod
+              consequatur eius architecto?
+            </p>
+          </div>
+        </div>
+
+        <div class="project-container reverse">
+          <div class="slideshow-container">
+            <div class="mySlides2">
+              <img src="/img/les-clowns-200.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides2">
+              <img
+                src="/img/2020-08-08-festival-vezere-chateau-saillant-cie-xylophages-alice-photo-olivier-soulie-www.28mmphoto.net-HR-31.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+          </div>
+          <div class="project-text-container">
+            <h1>Makbet</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              rerum iure possimus enim nulla ut reiciendis quo quibusdam
+              voluptatem illum dolore minus aut laborum placeat, rem, quod
+              consequatur eius architecto?
+            </p>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="video-container">
+             <iframe
+             class="responsive-iframe"
+            src="https://www.youtube.com/embed/1HyYJJjqZ-o"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          </div>
+          <div class="project-text-container">
+            <h1>Makbet</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              rerum iure possimus enim nulla ut reiciendis quo quibusdam
+              voluptatem illum dolore minus aut laborum placeat, rem, quod
+              consequatur eius architecto?
+            </p>
+          </div>
+         
+        </div>
+
+        <!-- ************************ -->
+      </section>
+      <section class="about" id="about">
+        <div class="about__bio-image">
+          <div class="about__bio">
+            <h2 class="text-secondary">BIO</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              culpa sapiente rerum dolores aliquam, fugiat eveniet commodi. Vel,
+              nihil, numquam possimus deserunt officiis rerum in omnis error
+              esse iusto quas.
+            </p>
+          </div>
+        </div>
+
+        <div class="jobs">
+          <div class="jobs__job">
+            <h2 class="text-secondary">2017 - Current</h2>
+            <h3>Google</h3>
+            <h6>Full Stack Developer</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              vero dolores eum ut, culpa ullam quis quasi exercitationem in
+              adipisci.
+            </p>
+          </div>
+          <div class="jobs__job">
+            <h2 class="text-secondary">2015 - 2017</h2>
+            <h3>Microsoft</h3>
+            <h6>Front End Developer</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              vero dolores eum ut, culpa ullam quis quasi exercitationem in
+              adipisci.
+            </p>
+          </div>
+          <div class="jobs__job">
+            <h2 class="text-secondary">2012 - 2015</h2>
+            <h3>Web Design Co.</h3>
+            <h6>Graphic Designer</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              vero dolores eum ut, culpa ullam quis quasi exercitationem in
+              adipisci.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Me..</h2>
+
+        <div class="contact__list">
+          <div class="contact__email">
+            <i class="fas fa-envelope"></i> Email
+            <div class="text-secondary">email@email.com</div>
+          </div>
+          <div class="contact__phone">
+            <i class="fas fa-mobile-alt"></i> Phone
+            <div class="text-secondary">+1 (555) 555-5555</div>
+          </div>
+          <div class="contact__address">
+            <i class="fas fa-marker-alt"></i> Address
+            <div class="text-secondary">123 First St. Houston, TX</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
