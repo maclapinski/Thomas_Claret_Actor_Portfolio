@@ -104,7 +104,8 @@
       @include transition-ease;
 
       &:hover {
-        color: green;
+        color: rgb(0, 45, 128);
+        border-bottom: 3px solid rgb(0, 45, 128);
       }
     }
   }

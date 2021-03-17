@@ -41,11 +41,9 @@
     .video-container {
       max-width: 1000px;
       position: relative;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       width: 90%;
-      /* height: 100%; */
+      margin: auto;
       min-height: 31vw;
       .responsive-iframe {
         position: absolute;
