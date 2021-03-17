@@ -13,8 +13,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("/Thomas_Claret_Actor_Portfolio/img/Thomas 6.jpg") center top;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("/Thomas_Claret_Actor_Portfolio/img/Thomas 6.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 6.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 6.jpg") center top;
   background-size: cover;
 }
 
@@ -192,8 +192,8 @@
 .about__bio-image {
   height: 50vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("/img/Thomas 2.jpg") center top;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("/img/Thomas 2.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 2.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 2.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,8 +402,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("/img/Thomas 3.jpg") center top;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("/img/Thomas 3.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 3.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 3.jpg") center top;
   background-size: cover;
 }
 
