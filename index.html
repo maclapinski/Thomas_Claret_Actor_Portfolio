@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/styles/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Thomas Claret Portfolio</title>
   </head>
   <body>
@@ -16,16 +26,19 @@
       <nav class="nav">
         <ul class="menu-nav">
           <li class="menu-nav__item active">
-            <a href="#" class="menu-nav__link"> Home </a>
+            <a href="#" class="menu-nav__link">Home</a>
           </li>
           <li class="menu-nav__item">
-            <a href="#about" class="menu-nav__link"> About Me </a>
+            <a href="#projects" class="menu-nav__link">Latest Shows</a>
           </li>
           <li class="menu-nav__item">
-            <a href="#projects" class="menu-nav__link"> My Work </a>
+            <a href="#about" class="menu-nav__link">About Me</a>
           </li>
           <li class="menu-nav__item">
-            <a href="#contact" class="menu-nav__link"> Contact Me </a>
+            <a href="#gallery" class="menu-nav__link">Gallery</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#contact" class="menu-nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -33,11 +46,9 @@
 
     <main>
       <section class="home">
-        <h2>Hi! My Name Is</h2>
         <h1 class="home__name">
           Thomas <span class="home__name--last">Claret</span>
         </h1>
-        <h2>Actor & Board Game Designer</h2>
 
         <div class="social-icons">
           <a href="#!">
@@ -46,141 +57,196 @@
           <a href="#!">
             <i class="fab fa-facebook fa-2x"></i>
           </a>
-          <a href="#!">
+          <a href="https://www.instagram.com/tho.claret/">
             <i class="fab fa-instagram fa-2x"></i>
           </a>
-          <a href="#!">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
         </div>
-
-        <footer>&copy; Copyright 2019</footer>
       </section>
+
       <section class="projects" id="projects">
-        <!-- ***************** slideshow -->
-        <h1 class="text-secondary">My Work</h1>
-        <div class="project-container">
-          <div class="slideshow-container">
-            <div class="mySlides1">
-              <img src="/img/095C2090.JPG" style="width: 100%" />
-            </div>
-
-            <div class="mySlides1">
-              <img src="/img/095C2107.JPG" style="width: 100%" />
-            </div>
-
-            <div class="mySlides1">
-              <img src="/img/095C2296.JPG" style="width: 100%" />
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-          </div>
-          <div class="project-text-container">
-            <h1>Hamlet</h1>
-            <p>
-               sit amet consectetur adipisicing elit. Soluta
-              rerum iure possimus enim nulla ut reiciendis quo quibusdam
-              voluptatem illum dolore minus aut laborum placeat, rem, quod
-              consequatur eius architecto?
-            </p>
-          </div>
-        </div>
-
-        <div class="project-container reverse">
-          <div class="slideshow-container">
-            <div class="mySlides2">
-              <img src="/img/les-clowns-200.jpg" style="width: 100%" />
-            </div>
-
-            <div class="mySlides2">
-              <img
-                src="/img/2020-08-08-festival-vezere-chateau-saillant-cie-xylophages-alice-photo-olivier-soulie-www.28mmphoto.net-HR-31.jpg"
-                style="width: 100%"
-              />
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-          </div>
-          <div class="project-text-container">
-            <h1>Makbet</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              rerum iure possimus enim nulla ut reiciendis quo quibusdam
-              voluptatem illum dolore minus aut laborum placeat, rem, quod
-              consequatur eius architecto?
-            </p>
-          </div>
-        </div>
+        <h1 class="text-secondary">Latest Shows</h1>
         <div class="project-container">
           <div class="video-container">
-             <iframe
-             class="responsive-iframe"
-            src="https://www.youtube.com/embed/1HyYJJjqZ-o"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+            <!-- <iframe
+              width="100%"
+              src="https://www.youtube.com/embed/GYfw4dy_VKg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> -->
+            <div class="videoWrapper">
+              <iframe
+                src="https://www.youtube.com/embed/kVk3PIpaOvM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
           <div class="project-text-container">
-            <h1>Makbet</h1>
+            <h1>A.T.A.X.</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              rerum iure possimus enim nulla ut reiciendis quo quibusdam
-              voluptatem illum dolore minus aut laborum placeat, rem, quod
-              consequatur eius architecto?
+              An emerging theatre company is doing its last rehearsals for its
+              latest show : an epic play. But one of the actors starts having
+              some problems acting and gonna put at risk the whole show…
             </p>
           </div>
-         
         </div>
-
-        <!-- ************************ -->
+        <div class="project-container reverse">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/Alice 1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Alice 2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Alice 3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button swiper-button-next"></div>
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="project-text-container">
+            <h1>ALICE</h1>
+            <p>
+              This family show is an adaptation of the story by Lewis Carroll,
+              Alice in Wonderland, which was awarded the prize for best staging
+              at the ECARTS Festival.
+            </p>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/095C2090.JPG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/095C2107.JPG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/095C2296.JPG" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button swiper-button-next"></div>
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="project-text-container">
+            <h1>Midsummer night’s dream</h1>
+            <p>
+              Thomas played Theseus and Oberon in Shakespeare’s comedy, A
+              Midsummer Night’s Dream, directed by Ariane Issartel.
+            </p>
+          </div>
+        </div>
       </section>
       <section class="about" id="about">
-        <div class="about__bio-image">
-          <div class="about__bio">
-            <h2 class="text-secondary">BIO</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              culpa sapiente rerum dolores aliquam, fugiat eveniet commodi. Vel,
-              nihil, numquam possimus deserunt officiis rerum in omnis error
-              esse iusto quas.
-            </p>
-          </div>
+        <div class="about__bio-image"></div>
+        <div class="about__bio">
+          <h2 class="text-secondary">About Me</h2>
+          <p>
+            Thomas Claret discovered his passion for theatre in a workshop at
+            l’EcoleNormale Supérieure de Paris. Following the workshop, he moved
+            to Canada, and studied acting at the Vancouver Academy of Dramatic
+            Arts. Back in France, he continued his training as a physical
+            theatre performer and trained at the Jacques Lecoq International
+            School of Theatre. Following his graduation, he is currently working
+            with the French director Lisa Wurmser. Thomas Claret is the
+            co-founder of Compagnie des Xylophages in and performed in five
+            shows of the company. He is also a member of the Sitio Company, an
+            emerging theatre company based in Paris led by François Couder.
+            Thomas is also highly trained in the martial arts (ninjutsu, karate,
+            boxing whatever)
+          </p>
         </div>
+
+        <!-- 
+        Stage 
+
+2021 – A.T.A.X. (Léo/Atax) – dir. by Cie des Xylophages – MJC Colombes 
+2020 – Midsummer night’s dream (Theseus/Oberon – dir. by Ariane Issartel – Théâtre du voyageur
+2020 – Alice (Ensemble) – dir by Cie des Xylophages -  Festival de la Vézère 
+2019 – Eclipse (Poetry teller) – dir. by Ariane Issartel and Thomas Claret – Kibélé
+2016 – Caligula (Cherea) – dir. by Ariane Issartel – Théâtre de l’ENS
+2014 – La Mouette (Trigorine) – dir. by Coline Zuber – Théâtre de l’ENS
+
+Movie 
+2020 – Still life (Immortal Z) – dir. by Simona Zemaytite (short) 
+2019 – Emily in Paris (Background) – dir. by Darren Star 
+2018 – Le Plongeon (Pierre) – dir. by Mathieu Eymeoud (short) 
+
+Commercial 
+2017 – Jollyclick (the cyclist) – dir. by Julien Joyeux-Vittoriani
+
+Voice over 
+2014 – Virtual exhibition « Les Frères Humboldt : l’Europe de l’esprit »     -->
 
         <div class="jobs">
           <div class="jobs__job">
-            <h2 class="text-secondary">2017 - Current</h2>
-            <h3>Google</h3>
-            <h6>Full Stack Developer</h6>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              vero dolores eum ut, culpa ullam quis quasi exercitationem in
-              adipisci.
-            </p>
+            <h2 class="text-secondary">2021 – A.T.A.X. (Léo/Atax)</h2>
+            <p>dir. by Cie des Xylophages – MJC Colombes</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">2015 - 2017</h2>
-            <h3>Microsoft</h3>
-            <h6>Front End Developer</h6>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              vero dolores eum ut, culpa ullam quis quasi exercitationem in
-              adipisci.
-            </p>
+            <h2 class="text-secondary">
+              2020 – Midsummer night’s dream (Theseus/Oberon)
+            </h2>
+            <p>dir. by Ariane Issartel – Théâtre du voyageur</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">2012 - 2015</h2>
-            <h3>Web Design Co.</h3>
-            <h6>Graphic Designer</h6>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              vero dolores eum ut, culpa ullam quis quasi exercitationem in
-              adipisci.
-            </p>
+            <h2 class="text-secondary">2020 – Alice (Ensemble)</h2>
+            <p>dir. by Cie des Xylophages - Festival de la Vézère</p>
           </div>
+          <div class="jobs__job">
+            <h2 class="text-secondary">2019 – Eclipse (Poetry teller)</h2>
+            <p>dir. by Ariane Issartel and Thomas Claret – Kibélé</p>
+          </div>
+          <div class="jobs__job">
+            <h2 class="text-secondary">2016 – Caligula (Cherea)</h2>
+            <p>dir. by Ariane Issartel – Théâtre de l’ENS</p>
+          </div>
+          <div class="jobs__job">
+            <h2 class="text-secondary">La Mouette (Trigorine)</h2>
+            <p>dir. by Coline Zuber – Théâtre de l’ENS</p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/Thomas Claret1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Thomas Claret5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Galerie 1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Galerie 2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Galerie 4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Galerie 5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Galerie 6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Galerie 7.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button swiper-button-next"></div>
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="contact" id="contact">
@@ -189,20 +255,23 @@
         <div class="contact__list">
           <div class="contact__email">
             <i class="fas fa-envelope"></i> Email
-            <div class="text-secondary">email@email.com</div>
+            <div class="text-secondary">
+              <a href="mailto:claret.tho@gmail.com">claret.tho@gmail.com</a>
+            </div>
           </div>
           <div class="contact__phone">
             <i class="fas fa-mobile-alt"></i> Phone
-            <div class="text-secondary">+1 (555) 555-5555</div>
-          </div>
-          <div class="contact__address">
-            <i class="fas fa-marker-alt"></i> Address
-            <div class="text-secondary">123 First St. Houston, TX</div>
+            <div class="text-secondary">
+              <a href="tel:+1604-679-5330">+1 (604) 679 5330</a>
+            </div>
           </div>
         </div>
       </section>
+      <footer>&copy; Copyright 2021</footer>
     </main>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
     <script src="js/main.js"></script>
   </body>

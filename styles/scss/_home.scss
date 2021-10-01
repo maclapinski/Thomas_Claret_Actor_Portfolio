@@ -4,24 +4,34 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: 
-    linear-gradient(
+  // background: linear-gradient(
+  //     to right,
+  //     rgba($primary-color, 0.9),
+  //     rgba($primary-color, 0.3)
+  //   ),
+  //   url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas\ 6.jpg") center top;
+    background: linear-gradient(
       to right,
       rgba($primary-color, 0.9),
       rgba($primary-color, 0.3)
     ),
-    url('/img/Thomas\ 2.jpg') center top;
+    url(/img/Intro.jpg) center top;
   background-size: cover;
 
   &__name {
     font-size: 5rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid set-text-color($primary-color);
 
     &--last {
       color: $secondary-color;
       font-weight: 700;
+    }
+    @media screen and (max-width: 490px) {
+      &--last {
+        position: relative;
+        bottom: 35px;
+      }
     }
   }
 }

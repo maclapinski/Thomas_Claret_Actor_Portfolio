@@ -1,4 +1,49 @@
 @include media-md {
+  
+
+  .about__bio {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    .project-container {
+      flex-direction: row;
+      padding: 3rem 2rem;
+      .project-text-container {
+        padding: 2rem;
+        text-align: left;
+      }
+    }
+    .text-secondary {
+      font-size: 3rem;
+    }
+    .social-icons {
+      display: flex !important;
+    }
+  }
+
+  .reverse {
+    flex-direction: row-reverse !important;
+  }
+  .gallery {
+    .swiper {
+      // width: 86%;
+      // height: 60%;
+    }
+    .swiper-slide img {
+      width: 50%;
+    }
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+    .contact__phone{
+      margin-left: auto;
+    }
+  }
+}
+
+@include media-lg {
   .menu-btn {
     visibility: hidden;
   }
@@ -23,60 +68,54 @@
       }
     }
   }
-
   .about__bio {
-    font-size: 1.5rem;
-    &-image{
-      height: 70vh;
-    }
-  }
-
-  .projects {
-    &__bio-image {
-      height: 80vh;
-    }
-    .project-container {
-      flex-direction: row;
-      .project-text-container {
-        padding: 0rem 2rem;
-        text-align: left;
-      }
-    }
-    .text-secondary {
-      font-size: 3rem;
-    }
-    .social-icons {
-      display: flex !important;
-    }
-  }
-
-  .reverse {
-    flex-direction: row-reverse !important;
-  }
-
-  .contact__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@include media-lg {
-  .about__bio {
-    &-image{
-      height: 80vh;
-    }
+    // &-image{
+    //   height: 80vh;
+    // }
   }
   .projects {
     &__items {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+  .gallery {
+    .swiper {
+      width: 35%;
+      height: 100%;
+  }
+    .swiper-slide img {
+      width: 70%;
+    }
   }
 }
 
 @include media-xl {
   .projects__bio-image {
     height: 50vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects {
+    .project-container {
+      width: 100%;
+      padding: 1rem 0;
+
+      .video-container {
+        padding: 0;
+        width: 85%;
+      }
+      .project-text-container {
+        align-items: left;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+      }
+      .swiper {
+        width: 85%;
+      }
+    }
   }
 }
