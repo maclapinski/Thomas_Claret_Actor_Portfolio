@@ -43,7 +43,7 @@ main {
   width: 100%;
 
   .social-icons {
-    position: fixed;
+    position: absolute;
     bottom: 1rem;
     left: 1rem;
 
@@ -68,10 +68,11 @@ main {
 
 footer {
   font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
+  bottom: 1rem;
   right: 1rem;
   text-align: right;
   padding: 1rem;
   color: set-text-color($primary-color);
 }
+
+          

@@ -3,15 +3,9 @@
   overflow-x: hidden;
 
   &__bio-image {
-    height: 50vh;
     width: 100vw;
-    background: 
-      linear-gradient(
-        to right,
-        rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
-      ),
-      url('https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas\ 2.jpg') center top;
+    height: 600px;
+    background: url(/img/Bio.JPG) center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -24,7 +18,7 @@
   }
 
   &__bio {
-    width: 80%;
+    margin: 2rem;
     text-align: center;
 
     .text-secondary {
@@ -44,7 +38,8 @@
       padding: 0.5rem;
       border-bottom: 5px solid $secondary-color;
 
-      h2, h3 {
+      h2,
+      h3 {
         margin: 0.5rem 0;
       }
       h6 {
@@ -59,9 +54,6 @@
   }
 
   footer {
-    transform:
-      rotate(90deg)
-      translate(-3rem, -5rem);
+    transform: rotate(90deg) translate(-3rem, -5rem);
   }
-  
 }

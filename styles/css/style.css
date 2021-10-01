@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -9,12 +8,9 @@
   height: 100%;
   padding-top: 40vh;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 6.jpg") center top;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 6.jpg") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url(/img/Intro.jpg) center top;
   background-size: cover;
 }
 
@@ -29,6 +25,13 @@
   font-weight: 700;
 }
 
+@media screen and (max-width: 490px) {
+  .home__name--last {
+    position: relative;
+    bottom: 35px;
+  }
+}
+
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -37,7 +40,6 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -48,7 +50,6 @@
   width: 28px;
   height: 3px;
   background: #1f1e1e;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -59,7 +60,6 @@
   width: 28px;
   height: 3px;
   background: #1f1e1e;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -70,25 +70,21 @@
   width: 20px;
   height: 3px;
   background: #1f1e1e;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger.open {
-  -webkit-transform: rotate(720deg);
-          transform: rotate(720deg);
+  transform: rotate(720deg);
   background: transparent;
 }
 
 .menu-btn__burger.open::before {
-  -webkit-transform: rotate(45deg) translate(5px, 8px);
-          transform: rotate(45deg) translate(5px, 8px);
+  transform: rotate(45deg) translate(5px, 8px);
 }
 
 .menu-btn__burger.open::after {
   width: 28px;
-  -webkit-transform: rotate(-45deg) translate(3px, -7px);
-          transform: rotate(-45deg) translate(3px, -7px);
+  transform: rotate(-45deg) translate(3px, -7px);
 }
 
 .nav {
@@ -100,50 +96,47 @@
   visibility: hidden;
 }
 
+.nav.scrolled {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 80%, rgba(0, 0, 0, 0) 90%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  transition: all 0.5s ease-in-out;
+}
+
 .nav.open {
   visibility: visible;
 }
 
 .nav .menu-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   overflow: hidden;
   background: #ffffff;
   list-style-type: none;
-  padding-right: 1rem;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 0.5s ease-in-out;
+  padding: 1rem 1rem 1.5rem 0;
+  transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
 
 .nav .menu-nav.open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .nav .menu-nav__item {
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
-  -webkit-transition: all 0.5s ease-in-out;
+  padding-bottom: .5rem;
+  transform: translateX(100vw);
   transition: all 0.5s ease-in-out;
 }
 
 .nav .menu-nav__item.open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .nav .menu-nav__item.active > a {
@@ -152,12 +145,10 @@
 
 .nav .menu-nav__link {
   display: inline-block;
-  font-size: .5em;
   text-transform: uppercase;
-  padding: 2rem 0;
   font-weight: 400;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 3px solid transparent;
 }
 
 .nav .menu-nav__link:hover {
@@ -166,23 +157,23 @@
 }
 
 .menu-nav__item:nth-child(1) {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
 .menu-nav__item:nth-child(2) {
-  -webkit-transition-delay: 0.35s;
-          transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 
 .menu-nav__item:nth-child(3) {
-  -webkit-transition-delay: 0.45s;
-          transition-delay: 0.45s;
+  transition-delay: 0.45s;
 }
 
 .menu-nav__item:nth-child(4) {
-  -webkit-transition-delay: 0.55s;
-          transition-delay: 0.55s;
+  transition-delay: 0.55s;
+}
+
+.menu-nav__item:nth-child(5) {
+  transition-delay: 0.65s;
 }
 
 .about {
@@ -191,24 +182,14 @@
 }
 
 .about__bio-image {
-  height: 50vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 2.jpg") center top;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 2.jpg") center top;
+  height: 600px;
+  background: url(/img/Bio.JPG) center center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .about__bio-image p {
@@ -216,7 +197,7 @@
 }
 
 .about__bio {
-  width: 80%;
+  margin: 2rem;
   text-align: center;
 }
 
@@ -227,10 +208,8 @@
 .about .jobs {
   width: 60vw;
   margin: 2rem auto 0 auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
 
@@ -240,7 +219,8 @@
   border-bottom: 5px solid #1a1025;
 }
 
-.about .jobs__job h2, .about .jobs__job h3 {
+.about .jobs__job h2,
+.about .jobs__job h3 {
   margin: 0.5rem 0;
 }
 
@@ -249,23 +229,18 @@
 }
 
 .about .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .about footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
+  transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 .projects {
-  padding-bottom: 2rem;
+  background-color: #e9e9e9;
   overflow: hidden;
+  padding-top: 2rem;
   /* project container */
   /* Next & previous buttons */
   /* Position the "next button" to the right */
@@ -275,27 +250,27 @@
 .projects .text-secondary {
   font-size: 2rem;
   text-align: center;
-  margin: 4rem;
+  margin: 3rem auto 0;
 }
 
 .projects .project-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
-  margin: 3rem auto;
+  background-color: #e9e9e9;
+  border-bottom: 2px solid gray;
+  padding: 3rem;
+}
+
+.projects .project-container:last-of-type {
+  border-bottom: none;
 }
 
 .projects .project-container .slideshow-container {
   max-width: 1000px;
+  padding: 2rem;
   position: relative;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90%;
 }
@@ -303,41 +278,32 @@
 .projects .project-container .video-container {
   max-width: 1000px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
+  width: 50%;
   margin: auto;
-  min-height: 31vw;
 }
 
-.projects .project-container .video-container .responsive-iframe {
+.projects .project-container .video-container .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 2px;
+  height: 0;
+}
+
+.projects .project-container .video-container .videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   width: 100%;
   height: 100%;
-  border: none;
 }
 
 .projects .project-container .project-text-container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
+  padding: 2rem;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: auto;
-  width: 90%;
+  flex-direction: column;
+  width: 50%;
   text-align: center;
 }
 
@@ -356,17 +322,13 @@
   color: white;
   font-weight: bold;
   font-size: 18px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .projects .next {
-  right: 0;
+  right: 32px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -378,153 +340,64 @@
 
 .projects .social-icons {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .projects footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
+  transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
-.gallery-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  margin: 3rem auto;
-  /* Slideshow container */
-  /* Hide the images by default */
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Caption text */
-  /* Number text (1/3 etc) */
-  /* The dots/bullets/indicators */
-  /* Fading animation */
+.swiper {
+  width: 50%;
+  height: 100%;
 }
 
-.gallery-container .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.gallery-container .mySlides {
-  display: none;
-}
-
-.gallery-container .prev,
-.gallery-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.gallery-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.gallery-container .prev:hover,
-.gallery-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.gallery-container .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.swiper-slide {
   text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gallery-container .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.gallery-container .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
+.swiper-pagination {
+  position: unset;
 }
 
-.gallery-container .active,
-.gallery-container .dot:hover {
-  background-color: #717171;
-}
-
-.gallery-container .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
+@media screen and (max-width: 1024px) {
+  .swiper-button {
+    display: none;
   }
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.gallery {
+  padding: 2rem 0;
+}
+
+.gallery .swiper {
+  width: 100%;
+  height: 60%;
+}
+
+.gallery .swiper-slide img {
+  width: 85%;
 }
 
 .contact {
-  height: 100%;
-  padding-top: 40vh;
+  padding: 9vh;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.3))), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 3.jpg") center top;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("https://maclapinski.github.io/Thomas_Claret_Actor_Portfolio/img/Thomas 3.jpg") center top;
   background-size: cover;
 }
@@ -535,10 +408,8 @@
 }
 
 .contact__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
   font-size: 1.5rem;
 }
@@ -549,6 +420,38 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .projects .project-container {
+    flex-direction: row;
+    padding: 3rem 2rem;
+  }
+  .projects .project-container .project-text-container {
+    padding: 2rem;
+    text-align: left;
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .projects .social-icons {
+    display: flex !important;
+  }
+  .reverse {
+    flex-direction: row-reverse !important;
+  }
+  .gallery .swiper-slide img {
+    width: 50%;
+  }
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__list .contact__phone {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .menu-btn {
     visibility: hidden;
   }
@@ -557,8 +460,7 @@
   }
   .nav .menu-nav {
     display: block;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     height: 100%;
     background: transparent;
     text-align: right;
@@ -570,62 +472,43 @@
   .nav .menu-nav__link {
     font-size: 1.5rem;
   }
-  .about__bio {
-    font-size: 1.5rem;
-  }
-  .about__bio-image {
-    height: 70vh;
-  }
-  .projects__bio-image {
-    height: 80vh;
-  }
-  .projects .project-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .projects .project-container .project-text-container {
-    padding: 0rem 2rem;
-    text-align: left;
-  }
-  .projects .text-secondary {
-    font-size: 3rem;
-  }
-  .projects .social-icons {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  .reverse {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: row-reverse !important;
-            flex-direction: row-reverse !important;
-  }
-  .contact__list {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .about__bio-image {
-    height: 80vh;
-  }
   .projects__items {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-  .contact__list {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+  .gallery .swiper {
+    width: 35%;
+    height: 100%;
+  }
+  .gallery .swiper-slide img {
+    width: 70%;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .projects__bio-image {
     height: 50vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects .project-container {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .projects .project-container .video-container {
+    padding: 0;
+    width: 85%;
+  }
+  .projects .project-container .project-text-container {
+    align-items: left;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
+  .projects .project-container .swiper {
+    width: 85%;
   }
 }
 
@@ -666,14 +549,13 @@ main {
 }
 
 main .social-icons {
-  position: fixed;
+  position: absolute;
   bottom: 1rem;
   left: 1rem;
 }
 
 main .social-icons a {
   padding: 0.4rem;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -692,8 +574,7 @@ main img {
 
 footer {
   font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
+  bottom: 1rem;
   right: 1rem;
   text-align: right;
   padding: 1rem;

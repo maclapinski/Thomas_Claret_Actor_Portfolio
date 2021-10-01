@@ -61,6 +61,16 @@
   opacity: 0.98;
   visibility: hidden;
 
+  &.scrolled {
+    // background: rgba(255, 255, 255, 0.9);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(to bottom, white 80%, rgba(0, 0, 0, 0) 90%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(to bottom, white 80%, rgba(0, 0, 0, 0) 90%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, white 80%, rgba(0, 0, 0, 0) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    @include transition-ease;
+  }
+
   &.open {
     visibility: visible;
   }
@@ -74,7 +84,7 @@
     overflow: hidden;
     background: $primary-color;
     list-style-type: none;
-    padding-right: 1rem;
+    padding: 1rem 1rem 1.5rem 0;
     transform: translateY(-100%);
     @include transition-ease;
 
@@ -83,6 +93,7 @@
     }
 
     &__item {
+      padding-bottom: .5rem;
       transform: translateX(100vw);
       @include transition-ease;
 
@@ -97,11 +108,10 @@
 
     &__link {
       display: inline-block;
-      font-size: .5em;
       text-transform: uppercase;
-      padding: 2rem 0;
       font-weight: 400;
-      @include transition-ease;
+      transition: all 0.2s ease-in-out;
+      border-bottom: 3px solid transparent;
 
       &:hover {
         color: rgb(0, 45, 128);
@@ -111,7 +121,7 @@
   }
 }
 
-@for $i from 1 through 4 {
+@for $i from 1 through 5 {
   .menu-nav__item:nth-child(#{$i}) {
     transition-delay: ($i * 0.1s) + 0.15s;
   }
