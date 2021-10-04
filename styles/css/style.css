@@ -202,6 +202,7 @@
 }
 
 .about__bio .text-secondary {
+  font-size: 3rem;
   padding-bottom: 1rem;
 }
 
@@ -248,9 +249,9 @@
 }
 
 .projects .text-secondary {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
-  margin: 3rem auto 0;
+  margin: 3rem auto 1rem;
 }
 
 .projects .project-container {
@@ -381,6 +382,12 @@
 
 .gallery {
   padding: 2rem 0;
+}
+
+.gallery .text-secondary {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem auto;
 }
 
 .gallery .swiper {
