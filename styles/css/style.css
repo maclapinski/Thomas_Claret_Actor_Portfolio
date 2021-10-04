@@ -6,7 +6,7 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 60vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -198,26 +198,28 @@
 
 .about__bio {
   margin: 2rem;
-  text-align: center;
 }
 
 .about__bio .text-secondary {
   font-size: 3rem;
+  text-align: center;
   padding-bottom: 1rem;
 }
 
 .about .jobs {
-  width: 60vw;
-  margin: 2rem auto 0 auto;
+  margin: 2rem 2rem 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
+}
+
+.about .jobs h1 {
+  font-size: 2rem;
 }
 
 .about .jobs__job {
   background: white;
   padding: 0.5rem;
-  border-bottom: 5px solid #1a1025;
 }
 
 .about .jobs__job h2,
@@ -380,10 +382,6 @@
   }
 }
 
-.gallery {
-  padding: 2rem 0;
-}
-
 .gallery .text-secondary {
   font-size: 3rem;
   text-align: center;
@@ -397,6 +395,16 @@
 
 .gallery .swiper-slide img {
   width: 85%;
+}
+
+@media screen and (min-width: 1025px) {
+  .gallery .swiper {
+    width: 45%;
+    height: 100%;
+  }
+  .gallery .swiper-slide img {
+    width: 70%;
+  }
 }
 
 .contact {
@@ -448,7 +456,7 @@
     flex-direction: row-reverse !important;
   }
   .gallery .swiper-slide img {
-    width: 50%;
+    width: 80%;
   }
   .contact__list {
     grid-template-columns: repeat(2, 1fr);
@@ -482,13 +490,6 @@
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gallery .swiper {
-    width: 35%;
-    height: 100%;
-  }
-  .gallery .swiper-slide img {
-    width: 70%;
-  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -500,7 +501,7 @@
 @media screen and (max-width: 767px) {
   .projects .project-container {
     width: 100%;
-    padding: 1rem 0;
+    padding: 3rem 0;
   }
   .projects .project-container .video-container {
     padding: 0;

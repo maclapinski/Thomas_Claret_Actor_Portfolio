@@ -1,5 +1,4 @@
 .gallery{
-  padding: 2rem 0;
   
  .text-secondary {
   font-size: 3rem;
@@ -12,6 +11,18 @@
 }
   .swiper-slide img{
     width: 85%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .gallery {
+    .swiper {
+      width: 45%;
+      height: 100%;
+    }
+    .swiper-slide img {
+      width: 70%;
+    }
   }
 }
 // .gallery-container {

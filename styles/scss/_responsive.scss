@@ -29,7 +29,7 @@
       // height: 60%;
     }
     .swiper-slide img {
-      width: 50%;
+      width: 80%;
     }
   }
 
@@ -76,15 +76,15 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .gallery {
-    .swiper {
-      width: 35%;
-      height: 100%;
-    }
-    .swiper-slide img {
-      width: 70%;
-    }
-  }
+  // .gallery {
+  //   .swiper {
+  //     width: 35%;
+  //     height: 100%;
+  //   }
+  //   .swiper-slide img {
+  //     width: 70%;
+  //   }
+  // }
 }
 
 @include media-xl {
@@ -97,7 +97,7 @@
   .projects {
     .project-container {
       width: 100%;
-      padding: 1rem 0;
+      padding: 3rem 0;
 
       .video-container {
         padding: 0;

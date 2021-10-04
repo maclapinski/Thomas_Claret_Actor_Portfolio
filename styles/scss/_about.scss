@@ -19,25 +19,27 @@
 
   &__bio {
     margin: 2rem;
-    text-align: center;
 
     .text-secondary {
       font-size: 3rem;
+      text-align: center;
       padding-bottom: 1rem;
     }
   }
 
   .jobs {
-    width: 60vw;
-    margin: 2rem auto 0 auto;
+    margin: 2rem 2rem 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
+    h1 {
+      font-size: 2rem;
+    }
 
     &__job {
       background: lighten($primary-color, 10%);
       padding: 0.5rem;
-      border-bottom: 5px solid $secondary-color;
+      // border-bottom: 5px solid $secondary-color;
 
       h2,
       h3 {
