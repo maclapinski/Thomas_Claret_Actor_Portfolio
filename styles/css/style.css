@@ -517,6 +517,9 @@
   .projects .project-container .swiper {
     width: 85%;
   }
+  .about .about__bio-image {
+    max-height: 50vh;
+  }
 }
 
 body {
