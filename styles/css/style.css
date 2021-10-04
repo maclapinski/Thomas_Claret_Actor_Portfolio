@@ -393,7 +393,7 @@
 }
 
 .contact {
-  padding: 9vh;
+  padding: 10vh 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -515,8 +515,8 @@
 body {
   background: #ffffff;
   color: #1f1e1e;
-  height: 100vh;
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
   line-height: 1.5;
 }
 
@@ -537,10 +537,10 @@ a {
 }
 
 header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 main {
@@ -549,7 +549,6 @@ main {
 }
 
 main .social-icons {
-  position: absolute;
   bottom: 1rem;
   left: 1rem;
 }
@@ -573,11 +572,14 @@ main img {
 }
 
 footer {
-  font-size: 1rem;
+  align-items: end;
   bottom: 1rem;
+  color: #1f1e1e;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
   right: 1rem;
   text-align: right;
-  padding: 1rem;
-  color: #1f1e1e;
 }
 /*# sourceMappingURL=style.css.map */

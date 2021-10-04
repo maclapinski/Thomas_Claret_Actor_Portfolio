@@ -10,8 +10,8 @@
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
-  height: 100vh;
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
   line-height: 1.5;
 }
 
@@ -32,10 +32,10 @@ a {
 }
 
 header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 main {
@@ -43,10 +43,8 @@ main {
   width: 100%;
 
   .social-icons {
-    position: absolute;
     bottom: 1rem;
     left: 1rem;
-
     a {
       padding: 0.4rem;
       @include transition-ease;
@@ -67,12 +65,15 @@ main {
 }
 
 footer {
-  font-size: 1rem;
+  align-items: end;
   bottom: 1rem;
+  color: set-text-color($primary-color);
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
   right: 1rem;
   text-align: right;
-  padding: 1rem;
-  color: set-text-color($primary-color);
 }
 
           
