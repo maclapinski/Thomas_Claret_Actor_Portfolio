@@ -2,7 +2,6 @@
   .about__bio {
     font-size: 1.5rem;
   }
-
   .projects {
     .project-container {
       flex-direction: row;
@@ -24,10 +23,6 @@
     flex-direction: row-reverse !important;
   }
   .gallery {
-    .swiper {
-      // width: 86%;
-      // height: 60%;
-    }
     .swiper-slide img {
       width: 80%;
     }
@@ -66,36 +61,20 @@
       }
     }
   }
-  .about__bio {
-    // &-image{
-    //   height: 80vh;
-    // }
-  }
   .projects {
     &__items {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  // .gallery {
-  //   .swiper {
-  //     width: 35%;
-  //     height: 100%;
-  //   }
-  //   .swiper-slide img {
-  //     width: 70%;
-  //   }
-  // }
 }
 
 @include media-xl {
   .projects__bio-image {
     height: 50vh;
   }
-  main{
-    .wrapper{
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
+  .wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
