@@ -492,9 +492,13 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1400px) {
   .projects__bio-image {
     height: 50vh;
+  }
+  main .wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
@@ -557,6 +561,10 @@ header {
 main {
   height: 100%;
   width: 100%;
+}
+
+main .wrapper {
+  max-width: 1400px;
 }
 
 main .social-icons {

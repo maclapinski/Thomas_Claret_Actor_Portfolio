@@ -91,6 +91,12 @@
   .projects__bio-image {
     height: 50vh;
   }
+  main{
+    .wrapper{
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {

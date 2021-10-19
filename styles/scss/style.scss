@@ -41,7 +41,9 @@ header {
 main {
   height: 100%;
   width: 100%;
-
+  .wrapper{
+    max-width: 1400px;
+  }
   .social-icons {
     bottom: 1rem;
     left: 1rem;
