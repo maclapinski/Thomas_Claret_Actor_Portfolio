@@ -21,24 +21,22 @@
     margin: 2rem;
 
     .text-secondary {
-      font-size: 3rem;
-      text-align: center;
+      font-size: 2rem;
       padding-bottom: 1rem;
     }
   }
 
   .jobs {
-    margin: 2rem 2rem 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    h1 {
-      font-size: 2rem;
-    }
 
     &__job {
-      background: lighten($primary-color, 10%);
+      
       padding: 0.5rem;
+      .heading{
+        font-weight: 600;
+      }
       h2,
       h3 {
         margin: 0.5rem 0;

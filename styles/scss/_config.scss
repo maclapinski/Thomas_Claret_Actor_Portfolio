@@ -1,11 +1,13 @@
-$primary-color: #ffffff;
-$secondary-color: #1a1025;
+
+      $primary-color: #f3722c;
+$secondary-color: #f8961e;
 $text-color: #1e1e1e;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 @mixin transition-ease {

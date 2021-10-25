@@ -1,18 +1,16 @@
 .projects {
-  background-color: rgb(233, 233, 233);
   overflow: hidden;
   padding-top: 2rem;
   .text-secondary {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2rem;
     margin: 3rem auto 1rem;
   }
   .project-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(233, 233, 233);
-    border-bottom: 2px solid gray;
+    
+    border-bottom: 2px solid #f8961e;
     padding: 3rem;
     &:last-of-type{
       border-bottom: none;
@@ -52,6 +50,7 @@
       text-align: center;
       h1 {
         margin: 1rem 0;
+        font-weight: 600;
       }
     }
   }

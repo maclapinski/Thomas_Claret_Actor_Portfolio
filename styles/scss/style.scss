@@ -8,18 +8,19 @@
 @import "responsive";
 
 body {
-  background: $primary-color;
+  background: #ffffff;
   color: set-text-color($primary-color);
   font-family: "Montserrat", sans-serif;
   height: 100vh;
   line-height: 1.5;
+  --swiper-theme-color: #f3722c;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Crimson Text', serif;
-  font-weight: 400;
+
+  font-weight: 600;
 }
 
 a {
@@ -43,12 +44,12 @@ main {
   width: 100%;
   .wrapper{
     max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
   .social-icons {
-    bottom: 1rem;
-    left: 1rem;
     a {
-      padding: 0.4rem;
       @include transition-ease;
 
       &:hover {
@@ -59,15 +60,15 @@ main {
 }
 
 footer {
-  align-items: end;
-  bottom: 1rem;
-  color: set-text-color($primary-color);
   display: flex;
   font-size: 1rem;
-  justify-content: space-between;
   padding: 1rem;
-  right: 1rem;
-  text-align: right;
+
+  justify-content: center;
+  background-color: #1f1e1e;
+  a{
+    color: #ffffff;
+  }
 }
 
           

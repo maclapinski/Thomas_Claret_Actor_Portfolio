@@ -23,7 +23,7 @@
         <span class="menu-btn__burger"></span>
       </div>
 
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <ul class="menu-nav">
           <li class="menu-nav__item active">
             <a href="#" class="menu-nav__link">Home</a>
@@ -44,7 +44,6 @@
       </nav>
     </header>
     <main>
-
       <section class="home">
         <h1 class="home__name">
           Thomas <span class="home__name--last">Claret</span>
@@ -52,80 +51,82 @@
       </section>
 
       <section class="projects" id="projects">
-        <h1 class="text-secondary">Latest Shows</h1>
-        
-        <div class="project-container wrapper">
-          <div class="video-container">
-            <div class="videoWrapper">
-              <iframe
-                src="https://www.youtube.com/embed/GYfw4dy_VKg"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-          <div class="project-text-container">
-            <h1>A.T.A.X.</h1>
-            <p>
-              An emerging theatre company is doing its last rehearsals for its
-              latest show: an epic play. But one of the actors starts having
-              some problems acting and gonna put at risk the whole show…
-            </p>
-          </div>
-        </div>
-        
-        <div class="project-container wrapper reverse">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/Alice 1s.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/Alice 2s.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/Alice 3s.jpg" alt="" />
+        <div class="wrapper">
+          <h1 class="text-secondary">Latest Shows</h1>
+
+          <div class="project-container">
+            <div class="video-container">
+              <div class="videoWrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/GYfw4dy_VKg"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
-            <div class="swiper-button swiper-button-next"></div>
-            <div class="swiper-button swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="project-text-container">
-            <h1>Alice</h1>
-            <p>
-              This family show is an adaptation of the story by Lewis Carroll,
-              Alice in Wonderland, which was awarded the prize for best staging
-              at the ECARTS Festival.
-            </p>
-          </div>
-        </div>
-        
-        <div class="project-container wrapper">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/Songe 1s.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/Songe 2s.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/Songe 3s.jpg" alt="" />
-              </div>
+            <div class="project-text-container">
+              <h1>A.T.A.X.</h1>
+              <p>
+                An emerging theatre company is doing its last rehearsals for its
+                latest show: an epic play. But one of the actors starts having
+                some problems acting and gonna put at risk the whole show…
+              </p>
             </div>
-            <div class="swiper-button swiper-button-next"></div>
-            <div class="swiper-button swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
           </div>
-          <div class="project-text-container">
-            <h1>Midsummer night’s dream</h1>
-            <p>
-              Thomas played Theseus and Oberon in Shakespeare’s comedy, A
-              Midsummer Night’s Dream, directed by Ariane Issartel.
-            </p>
+
+          <div class="project-container reverse">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/Alice 1s.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/Alice 2s.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/Alice 3s.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button swiper-button-next"></div>
+              <div class="swiper-button swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="project-text-container">
+              <h1>Alice</h1>
+              <p>
+                This family show is an adaptation of the story by Lewis Carroll,
+                Alice in Wonderland, which was awarded the prize for best
+                staging at the ECARTS Festival.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/Songe 1s.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/Songe 2s.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/Songe 3s.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button swiper-button-next"></div>
+              <div class="swiper-button swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="project-text-container">
+              <h1>Midsummer night’s dream</h1>
+              <p>
+                Thomas played Theseus and Oberon in Shakespeare’s comedy, A
+                Midsummer Night’s Dream, directed by Ariane Issartel.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -136,146 +137,164 @@
           <h2 class="text-secondary">About Me</h2>
           <p>
             Thomas Claret discovered his passion for theatre in a workshop at
-            l’Ecole Normale Supérieure de Paris. Following the workshop, he moved
-            to Canada and studied acting at the Vancouver Academy of Dramatic
-            Arts. Back in France, he continued his training as a physical
-            theatre performer and trained at the Jacques Lecoq International
-            School of Theatre. Following his graduation, he worked
+            l’Ecole Normale Supérieure de Paris. Following the workshop, he
+            moved to Canada and studied acting at the Vancouver Academy of
+            Dramatic Arts. Back in France, he continued his training as a
+            physical theatre performer and trained at the Jacques Lecoq
+            International School of Theatre. Following his graduation, he worked
             with the French director Lisa Wurmser. Thomas Claret is the
             co-founder of Compagnie des Xylophages and performed in five shows
             of the company. He is also a member of the Sitio Company, an
             emerging theatre company based in Paris led by François Couder.
-            Thomas is also trained in martial arts and stage combat (judo, ninjutsu, boxing)
+            Thomas is also trained in martial arts and stage combat (judo,
+            ninjutsu, boxing)
           </p>
         </div>
 
         <div class="jobs wrapper">
           <h1>Stage</h1>
           <div class="jobs__job">
-            <h2 class="text-secondary">2021 – A.T.A.X. (Léo/Atax)</h2>
+            <p class="heading">2021 – A.T.A.X. (Léo/Atax)</p>
             <p>dir. by Cie des Xylophages – MJC Colombes</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">
+            <p class="heading">
               2020 – Midsummer night’s dream (Theseus/Oberon)
-            </h2>
+            </p>
             <p>dir. by Ariane Issartel – Théâtre du voyageur</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">2020 – Alice (Ensemble)</h2>
+            <p class="heading">2020 – Alice (Ensemble)</p>
             <p>dir. by Cie des Xylophages - Festival de la Vézère</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">2019 – Eclipse (Poetry teller)</h2>
+            <p class="heading">2019 – Eclipse (Poetry teller)</p>
             <p>dir. by Ariane Issartel and Thomas Claret – Kibélé</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">2016 – Caligula (Cherea)</h2>
+            <p class="heading">2016 – Caligula (Cherea)</p>
             <p>dir. by Ariane Issartel – Théâtre de l’ENS</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">La Mouette (Trigorine)</h2>
+            <p class="heading">La Mouette (Trigorine)</p>
             <p>dir. by Coline Zuber – Théâtre de l’ENS</p>
           </div>
           <h1>Movie</h1>
           <div class="jobs__job">
-            <h2 class="text-secondary">2020 – Still life (Immortal Z)</h2>
+            <p class="heading">2020 – Still life (Immortal Z)</p>
             <p>dir. by Simona Zemaytite (short)</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">2019 – Emily in Paris (Background)</h2>
+            <p class="heading">2019 – Emily in Paris (Background)</p>
             <p>dir. by Darren Star</p>
           </div>
           <div class="jobs__job">
-            <h2 class="text-secondary">2018 – Le Plongeon (Pierre)</h2>
+            <p class="heading">2018 – Le Plongeon (Pierre)</p>
             <p>dir. by Mathieu Eymeoud (short)</p>
           </div>
           <h1>Commercial</h1>
           <div class="jobs__job">
-            <h2 class="text-secondary">2017 – Jollyclick (the cyclist)</h2>
+            <p class="heading">2017 – Jollyclick (the cyclist)</p>
             <p>dir. by Julien Joyeux-Vittoriani</p>
           </div>
           <h1>Voice over</h1>
           <div class="jobs__job">
-            <h2 class="text-secondary">
+            <p class="heading">
               2014 – The Humboldt brothers – The Spirit of Europe › Alexander
               and Wilhelm von Humboldt
-            </h2>
+            </p>
             <p>Virtual exhibition voice over</p>
           </div>
         </div>
       </section>
 
       <section class="gallery" id="gallery">
-        <h1 class="text-secondary">Gallery</h1>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./img/Thomas Claret1.jpg" alt="" />
+        <div class="wrapper">
+          <h1 class="text-secondary">Gallery</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/Thomas Claret1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Thomas Claret5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Galerie 1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Galerie 2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Galerie 4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Galerie 5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Galerie 6.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/Galerie 7.jpg" alt="" />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="./img/Thomas Claret5.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/Galerie 1.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/Galerie 2.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/Galerie 4.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/Galerie 5.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/Galerie 6.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/Galerie 7.jpg" alt="" />
-            </div>
+            <div class="swiper-button swiper-button-next"></div>
+            <div class="swiper-button swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-button swiper-button-next"></div>
-          <div class="swiper-button swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <section class="contact" id="contact">
-        <h2>Contact</h2>
-
-        <div class="contact__list">
-          <div class="contact__email">
-            <i class="fas fa-envelope"></i> Email
-            <div class="text-secondary">
-              <a href="mailto:claret.tho@gmail.com">claret.tho@gmail.com</a>
+        <div class="wrapper">
+          <h1 class="text-secondary">Contact</h1>
+          <div class="contact__list">
+            <div class="contact__email">
+              <i class="fas fa-envelope"></i> Email
+              <div>
+                <a href="mailto:claret.tho@gmail.com">claret.tho@gmail.com</a>
+              </div>
             </div>
-          </div>
-          <div class="contact__phone">
-            <i class="fas fa-mobile-alt"></i> Phone
-            <div class="text-secondary">
-              <a href="tel:+1604-679-5330">+1 (604) 679 5330</a>
+            <div class="contact__phone">
+              <i class="fas fa-mobile-alt"></i> Phone
+              <div>
+                <a href="tel:+1604-679-5330">+1 (604) 679 5330</a>
+              </div>
+            </div>
+            <div class="social-icons">
+              <!-- <a href="#!">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+              <a href="#!">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a> -->
+              <a href="https://www.instagram.com/tho.claret/">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <footer>
-        <div class="social-icons">
-          <a href="#!">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="https://www.instagram.com/tho.claret/">
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-        </div>
-        <p>&copy; Copyright 2021</p>
+ 
+          
+          <a href="">Created by Mac Lapinski</a>
+
       </footer>
     </main>
 
     <!-- Swiper JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
     <script src="js/main.js"></script>

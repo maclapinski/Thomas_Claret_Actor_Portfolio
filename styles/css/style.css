@@ -10,18 +10,19 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url(/img/Intro.jpg) center top;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(/img/Intro.jpg) center top;
   background-size: cover;
 }
 
 .home__name {
+  color: #f8961e;
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 
 .home__name--last {
-  color: #1a1025;
+  color: #f3722c;
   font-weight: 700;
 }
 
@@ -34,6 +35,7 @@
 
 .menu-btn {
   position: absolute;
+  color: #f3722c;
   z-index: 1;
   right: 1rem;
   top: 1rem;
@@ -49,7 +51,7 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: #1f1e1e;
+  background: #f3722c;
   transition: all 0.5s ease-in-out;
 }
 
@@ -59,7 +61,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #1f1e1e;
+  background: #f3722c;
   transition: all 0.5s ease-in-out;
 }
 
@@ -69,7 +71,7 @@
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #1f1e1e;
+  background: #f3722c;
   transition: all 0.5s ease-in-out;
 }
 
@@ -139,20 +141,21 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #1a1025;
+  color: #f8961e;
 }
 
 .nav .menu-nav__link {
   display: inline-block;
   text-transform: uppercase;
-  font-weight: 400;
+  color: #f3722c;
+  font-weight: 500;
   transition: all 0.2s ease-in-out;
   border-bottom: 3px solid transparent;
 }
 
 .nav .menu-nav__link:hover {
-  color: #002d80;
-  border-bottom: 3px solid #002d80;
+  color: #f8961e;
+  border-bottom: 3px solid #f8961e;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -200,25 +203,22 @@
 }
 
 .about__bio .text-secondary {
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
 
 .about .jobs {
-  margin: 2rem 2rem 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
 
-.about .jobs h1 {
-  font-size: 2rem;
+.about .jobs__job {
+  padding: 0.5rem;
 }
 
-.about .jobs__job {
-  background: white;
-  padding: 0.5rem;
+.about .jobs__job .heading {
+  font-weight: 600;
 }
 
 .about .jobs__job h2,
@@ -235,7 +235,6 @@
 }
 
 .projects {
-  background-color: #e9e9e9;
   overflow: hidden;
   padding-top: 2rem;
   /* Next & previous buttons */
@@ -244,8 +243,7 @@
 }
 
 .projects .text-secondary {
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2rem;
   margin: 3rem auto 1rem;
 }
 
@@ -253,8 +251,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #e9e9e9;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #f8961e;
   padding: 3rem;
 }
 
@@ -304,6 +301,7 @@
 
 .projects .project-container .project-text-container h1 {
   margin: 1rem 0;
+  font-weight: 600;
 }
 
 .projects .prev,
@@ -370,8 +368,7 @@
 }
 
 .gallery .text-secondary {
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2rem;
   margin: 2rem auto;
 }
 
@@ -402,8 +399,8 @@
   align-items: center;
 }
 
-.contact h2 {
-  font-size: 3rem;
+.contact .text-secondary {
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -411,18 +408,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  font-size: 1.5rem;
-}
-
-.contact .social-icons {
-  position: initial;
-  margin-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .about__bio {
-    font-size: 1.5rem;
-  }
   .projects .project-container {
     flex-direction: row;
     padding: 3rem 2rem;
@@ -430,9 +418,6 @@
   .projects .project-container .project-text-container {
     padding: 2rem;
     text-align: left;
-  }
-  .projects .text-secondary {
-    font-size: 3rem;
   }
   .projects .social-icons {
     display: flex !important;
@@ -444,10 +429,7 @@
     width: 80%;
   }
   .contact__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .contact__list .contact__phone {
-    margin-left: auto;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -518,13 +500,13 @@ body {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
   line-height: 1.5;
+  --swiper-theme-color: #f3722c;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Crimson Text', serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 a {
@@ -550,40 +532,28 @@ main {
 
 main .wrapper {
   max-width: 1400px;
-}
-
-main .social-icons {
-  bottom: 1rem;
-  left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 main .social-icons a {
-  padding: 0.4rem;
   transition: all 0.5s ease-in-out;
 }
 
 main .social-icons a:hover {
-  color: #1a1025;
-}
-
-main .mySlides1,
-main .mySlides2 {
-  display: none;
-}
-
-main img {
-  vertical-align: middle;
+  color: #f8961e;
 }
 
 footer {
-  align-items: end;
-  bottom: 1rem;
-  color: #1f1e1e;
   display: flex;
   font-size: 1rem;
-  justify-content: space-between;
   padding: 1rem;
-  right: 1rem;
-  text-align: right;
+  justify-content: center;
+  background-color: #1f1e1e;
+}
+
+footer a {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -28,110 +28,45 @@ function toggleMenu() {
   }
 }
 
-// slideshow
-
-var slideIndex = [1, 1];
-/* Class the members of each slideshow group with different CSS classes */
-var slideId = ["mySlides1", "mySlides2"];
-// showSlides(1, 0);
-// showSlides(1, 1);
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {
-    slideIndex[no] = 1;
-  }
-  if (n < 1) {
-    slideIndex[no] = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex[no] - 1].style.display = "block";
-}
-function plusSlides(n, no) {
-  console.log("plus");
-  showSlides((slideIndex[no] += n), no);
-}
-
-// // repeat with the interval of 2 seconds
-// let timerId = setInterval(() => plusSlides(1, 1), 3000);
-
-// Initialize Swiper
-
-// var swiper = new Swiper(".mySwiper", {
-//   spaceBetween: 30,
-//   effect: "fade",
-//   loop: true,
-//   // centeredSlides: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
-// var swiper = new Swiper(".mySwiper", {
-//   effect: "cube",
-//   grabCursor: true,
-//   loop: true,
-//   cubeEffect: {
-//     shadow: true,
-//     slideShadows: true,
-//     shadowOffset: 20,
-//     shadowScale: 0.94,
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-// });
-
 const windowWidth = window.innerWidth;
 
 if (windowWidth > 1024) {
-   const swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      loop: true,
-      // centeredSlides: true,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+  const swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    // centeredSlides: true,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+} else {
+  const swiper = new Swiper(".mySwiper", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -400],
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      next: {
+        translate: ["100%", 0, 0],
       },
-    });
-  } else {
-   const swiper = new Swiper(".mySwiper", {
-      grabCursor: true,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: [0, 0, -400],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  }
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+}
 
 // ********************
 
@@ -164,10 +99,36 @@ window.addEventListener("scroll", function () {
   }
 });
 
+/* Code for changing active 
+            link on clicking */
+var btns = $("#nav .menu-nav .menu-nav__item");
+console.log(btns);
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+/* Code for changing active 
+            link on Scrolling */
+$(window)
+  .scroll(function () {
+    var distance = $(window).scrollTop();
+    $("section").each(function (i) {
+      if ($(this).position().top <= distance + 500) {
+        $(".menu-nav li.active").removeClass("active");
+
+        $(".menu-nav li").eq(i).addClass("active");
+      }
+    });
+  })
+  .scroll();
+
 //Event listener to scroll back to top
 // $("#scrollUp").click(function () {
 //   $("html, body").animate({ scrollTop: 0 }, "300");
 // });
 //*********************** */
-
-
