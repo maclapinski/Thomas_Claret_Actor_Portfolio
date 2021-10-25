@@ -244,7 +244,7 @@
 
 .projects .text-secondary {
   font-size: 2rem;
-  margin: 3rem auto 1rem;
+  margin: 3rem auto 0;
 }
 
 .projects .project-container {
@@ -476,18 +476,18 @@
   }
   .projects .project-container .video-container {
     padding: 0;
-    width: 85%;
+    width: 100%;
   }
   .projects .project-container .project-text-container {
     align-items: left;
-    padding: 2rem;
+    padding: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: left;
   }
   .projects .project-container .swiper {
-    width: 85%;
+    width: 100%;
   }
   .about .about__bio-image {
     max-height: 50vh;
