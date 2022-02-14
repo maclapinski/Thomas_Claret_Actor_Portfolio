@@ -5,7 +5,7 @@
   &__bio-image {
     width: 100vw;
     height: 600px;
-    background: url(/img/Bio.JPG) center center;
+    background: url(/img/Bio.avif) center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -33,9 +33,8 @@
     grid-gap: 1rem;
 
     &__job {
-      
       padding: 0.5rem;
-      .heading{
+      .heading {
         font-weight: 600;
       }
       h2,
